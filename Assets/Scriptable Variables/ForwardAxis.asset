@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90097d77f7753454e8f01cc993337690, type: 3}
   m_Name: ForwardAxis
   m_EditorClassIdentifier: 
-  value: {x: 1, y: 0, z: 0}
+  value: {x: 0, y: 0, z: 0}

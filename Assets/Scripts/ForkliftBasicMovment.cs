@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[RequireComponent(typeof(Rigidbody))]
 public class ForkliftBasicMovment : MonoBehaviour
 {
 
@@ -80,7 +80,7 @@ public class ForkliftBasicMovment : MonoBehaviour
     public void Moving(float speed, Vector3 forwardAxis, Vector3 rotationAxis)
     {
         rb.velocity = (speed * forwardAxis);
-        transform.Rotate(speed * rotationAxis);
+        ///stransform.Rotate(speed * rotationAxis);
     }
 
 

@@ -140,6 +140,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4277657118430236}
   - component: {fileID: 114750319270459860}
+  - component: {fileID: 114807697197793254}
+  - component: {fileID: 54246164779834696}
   m_Layer: 0
   m_Name: Forklift
   m_TagString: Untagged
@@ -1251,6 +1253,9 @@ GameObject:
   - component: {fileID: 33834147430785020}
   - component: {fileID: 23963744720222640}
   - component: {fileID: 64498079471989024}
+  - component: {fileID: 65942732331268734}
+  - component: {fileID: 65446308583130082}
+  - component: {fileID: 114176792694632010}
   m_Layer: 0
   m_Name: Blah
   m_TagString: Untagged
@@ -1663,11 +1668,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1300246864325772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.84, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4825256215891122}
   - {fileID: 4277657118430236}
+  - {fileID: 4825256215891122}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1913,7 +1918,7 @@ Transform:
   - {fileID: 4191924484217880}
   - {fileID: 4138950896258842}
   m_Father: {fileID: 4115725460405326}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4287072637242162
 Transform:
@@ -2693,7 +2698,7 @@ Transform:
   - {fileID: 4155394459650934}
   - {fileID: 4527645945467894}
   m_Father: {fileID: 4115725460405326}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4833737462850094
 Transform:
@@ -6534,6 +6539,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1579860359086810}
   m_Mesh: {fileID: 4300050, guid: 300257de84847894ebde8b5bd26037ab, type: 3}
+--- !u!54 &54246164779834696
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1092307909957090}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!64 &64012164327216306
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -6702,6 +6722,42 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300020, guid: 61f9b5a6858806944af3a1a4d722c46e, type: 3}
+--- !u!65 &65446308583130082
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816174977658582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00581398, y: 0.018673172, z: 0.0010743437}
+  m_Center: {x: -0.010045791, y: -0.024069129, z: -0.035128977}
+--- !u!65 &65942732331268734
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816174977658582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0056333053, y: 0.018673172, z: 0.0010743437}
+  m_Center: {x: 0.009524799, y: -0.024069129, z: -0.035128977}
+--- !u!114 &114176792694632010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1816174977658582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57e04c5bc4ca2d47aa43e545b000a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxWeight: 100
 --- !u!114 &114750319270459860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6718,3 +6774,17 @@ MonoBehaviour:
   liftingStick: {fileID: 11400000, guid: fe8112b4daeba3843a7faa06143bcf2c, type: 2}
   blah: {fileID: 4295845242679118}
   speed: 0.01
+--- !u!114 &114807697197793254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1092307909957090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb1e5c8d6a333941816bc14ddfcc624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movmentSpeed: {fileID: 11400000, guid: 2969ac081f128d34c85af5283c7a57be, type: 2}
+  rotationAxis: {fileID: 11400000, guid: 1bc9a3aad7b03dc4bb504bd992b64dab, type: 2}
+  movementStick: {fileID: 11400000, guid: 85bafaae97fce4242b5eabe4f2295609, type: 2}
