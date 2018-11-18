@@ -16,6 +16,9 @@ TagManager:
   - SnapCylinder
   - SnapSaucer
   - Head
+  - projectile
+  - FxTemporaire
+  - Load
   layers:
   - Default
   - TransparentFX
