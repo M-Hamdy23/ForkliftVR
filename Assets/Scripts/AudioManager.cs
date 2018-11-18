@@ -34,7 +34,7 @@ public class AudioManager : MonoBehaviour
             s.source.spatialBlend = s.spatialBlend;
         }
 
-        Play("BackgroundMusic");
+       // Play("BackgroundMusic");
     }
     void Start()
     {
