@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class ControlForklift : MonoBehaviour
 {
@@ -18,14 +19,23 @@ public class ControlForklift : MonoBehaviour
        
 	}
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "Hand")
-        {
-            var rb = other.gameObject.GetComponent<Rigidbody>();
+    //private void OnTriggerStay(Collider other)
+    //{
+    //    //if (other.gameObject.tag == "Hand")
+    //    //{
+    //        var rb = other.gameObject.GetComponent<Rigidbody>();
 
-            rb.constraints = RigidbodyConstraints.None;
-        }
+    //        rb.constraints = RigidbodyConstraints.None;
+    //        Debug.Log("triggerstay");
+    //    //}
+    //}
+
+    void HandAttachedUpdate(Hand hand)
+    {
+        var rb = hand.gameObject.GetComponent<Rigidbody>();
+
+        rb.constraints = RigidbodyConstraints.None;
+        Debug.Log("HEEEEEEY");
     }
 
     private void OnTriggerExit(Collider other)
@@ -35,6 +45,7 @@ public class ControlForklift : MonoBehaviour
             var rb = other.gameObject.GetComponent<Rigidbody>();
 
             rb.constraints = RigidbodyConstraints.FreezeRotationX;
+            Debug.Log("triggerstay");
         }
     }
 }
