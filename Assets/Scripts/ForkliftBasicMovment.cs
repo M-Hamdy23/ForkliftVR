@@ -4,7 +4,6 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class ForkliftBasicMovment : MonoBehaviour
 {
-
     [Header("Movment Options")]
     [SerializeField] FloatVariable movmentSpeed;
     // [SerializeField] Vector3Variable forwardAxis;
@@ -13,23 +12,19 @@ public class ForkliftBasicMovment : MonoBehaviour
 
     private float currSpeed;
     private Rigidbody rb;
-
+    MappingRotation mr;
 
     private void Awake()
     {
-
+        mr = GetComponent<MappingRotation>();
         rb = GetComponent<Rigidbody>();
 
     }
-
-
 
     void Start()
     {
 
     }
-
-
 
     void Update()
     {
@@ -53,12 +48,11 @@ public class ForkliftBasicMovment : MonoBehaviour
         //    currSpeed = 0;
         //}
 
-
-
         if (movementStick.value == 1)
         {
             currSpeed = movmentSpeed.value;
         }
+
         if (movementStick.value == -1)
         {
             currSpeed = -movmentSpeed.value;
@@ -67,22 +61,25 @@ public class ForkliftBasicMovment : MonoBehaviour
         {
             currSpeed = 0;
         }
+
         Moving(currSpeed, transform.forward, rotationAxis.value);
     }
-
 
     void FixedUpdate()
     {
         //Moving(currSpeed, transform.forward, rotationAxis.value);
     }
 
-
     public void Moving(float speed, Vector3 forwardAxis, Vector3 rotationAxis)
     {
-       transform.Rotate(speed * rotationAxis);
-       rb.AddForce(speed * forwardAxis);
-    }
+        if (mr.rotationChanged)
+        {
+            transform.Rotate(speed * 5 * rotationAxis);
+        }
 
+        rb.velocity = speed * forwardAxis;
+        //rb.AddForce(speed * forwardAxis);
+    }
 
     #region nothing
     //public void MoveRight()
@@ -102,6 +99,4 @@ public class ForkliftBasicMovment : MonoBehaviour
     //    currSpeed = 0;
     //}
     #endregion
-
-
 }
