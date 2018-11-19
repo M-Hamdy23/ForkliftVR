@@ -113,51 +113,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &52255807
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 52255808}
-  - component: {fileID: 52255809}
-  m_Layer: 0
-  m_Name: EventHandler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &52255808
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 52255807}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1344707995}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &52255809
+--- !u!114 &52255809 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 52255807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114325168894788304, guid: 67f1098a137c50c42a798a19a4d9da0f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1344707994}
   m_Script: {fileID: 11500000, guid: e76629a6fe409234ea87e48a0119c647, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startRiding: {fileID: 11400000, guid: 86df52b30cdd8854babddceeeb5be303, type: 2}
-  tireFixing: {fileID: 11400000, guid: 73000aa0b4856414d835a141f50331ac, type: 2}
-  showListItem: {fileID: 11400000, guid: ccf497538ae194f449ab99c3f590b5ec, type: 2}
-  tireButton: {fileID: 1857530335}
-  gasButton: {fileID: 1821483987}
 --- !u!1001 &140146664
 Prefab:
   m_ObjectHideFlags: 0
@@ -243,14 +204,32 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114770716278785598, guid: db470c68d388e4144bc99f3efc18bc79,
+        type: 2}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 52255809}
+    - target: {fileID: 114488814953209464, guid: db470c68d388e4144bc99f3efc18bc79,
+        type: 2}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 52255809}
+    - target: {fileID: 114007643376966612, guid: db470c68d388e4144bc99f3efc18bc79,
+        type: 2}
+      propertyPath: onButtonDown.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 52255809}
+    - target: {fileID: 1702387763907288, guid: db470c68d388e4144bc99f3efc18bc79, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734831451793304, guid: db470c68d388e4144bc99f3efc18bc79, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db470c68d388e4144bc99f3efc18bc79, type: 2}
   m_IsPrefabAsset: 0
---- !u!4 &164588959 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4115725460405326, guid: db470c68d388e4144bc99f3efc18bc79,
-    type: 2}
-  m_PrefabInternal: {fileID: 164588958}
 --- !u!1 &208600836
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,53 +292,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &267767285
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 164588959}
-    m_Modifications:
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -4.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -2.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114123112712245238, guid: cd3906eea100676448a43f51c03e286b,
-        type: 2}
-      propertyPath: m_Text
-      value: Start Riding ... who got the time !
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1001 &345022179
 Prefab:
   m_ObjectHideFlags: 0
@@ -585,6 +517,77 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4115725460405326, guid: 506918acc38f9b047a6984cae005a78a,
     type: 2}
   m_PrefabInternal: {fileID: 670298917}
+--- !u!1 &719562950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 719562951}
+  - component: {fileID: 719562953}
+  - component: {fileID: 719562952}
+  m_Layer: 0
+  m_Name: DrivingPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &719562951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719562950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1344707995}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &719562952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719562950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81ad37c69ba33b469aa9114d779907f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 86df52b30cdd8854babddceeeb5be303, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 719562953}
+        m_MethodName: SetDrivingPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &719562953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 719562950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9b4c3e370112b4c8697436a6de1086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixingTirePosition: {fileID: 11400000, guid: 5338126afdcae924a99d76274ec306af, type: 2}
+  drivingPoasition: {fileID: 11400000, guid: b187de8948f18674f8ecf68fecda71b8, type: 2}
 --- !u!1001 &742537877
 Prefab:
   m_ObjectHideFlags: 0
@@ -727,6 +730,49 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 897145038}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &926772487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926772488}
+  - component: {fileID: 926772489}
+  m_Layer: 0
+  m_Name: PositionHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &926772488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 926772487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1344707995}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &926772489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 926772487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 898a21f9d87369e45a81301664323388, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  fixingTirePosition: {fileID: 11400000, guid: 5338126afdcae924a99d76274ec306af, type: 2}
+  drivingPoasition: {fileID: 11400000, guid: b187de8948f18674f8ecf68fecda71b8, type: 2}
 --- !u!1001 &1010696599
 Prefab:
   m_ObjectHideFlags: 0
@@ -1042,6 +1088,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114325168894788304, guid: 67f1098a137c50c42a798a19a4d9da0f,
+        type: 2}
+      propertyPath: tireButton
+      value: 
+      objectReference: {fileID: 1857530335}
+    - target: {fileID: 114325168894788304, guid: 67f1098a137c50c42a798a19a4d9da0f,
+        type: 2}
+      propertyPath: gasButton
+      value: 
+      objectReference: {fileID: 1821483987}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67f1098a137c50c42a798a19a4d9da0f, type: 2}
   m_IsPrefabAsset: 0
@@ -1176,6 +1232,77 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5da564b06eb6aa4aba80de613d3c187, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1625172889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1625172890}
+  - component: {fileID: 1625172892}
+  - component: {fileID: 1625172891}
+  m_Layer: 0
+  m_Name: TireFixPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1625172890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625172889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1344707995}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1625172891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625172889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81ad37c69ba33b469aa9114d779907f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 73000aa0b4856414d835a141f50331ac, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1625172892}
+        m_MethodName: SetFixingPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1625172892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625172889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9b4c3e370112b4c8697436a6de1086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixingTirePosition: {fileID: 11400000, guid: 5338126afdcae924a99d76274ec306af, type: 2}
+  drivingPoasition: {fileID: 11400000, guid: b187de8948f18674f8ecf68fecda71b8, type: 2}
 --- !u!1001 &1760532172
 Prefab:
   m_ObjectHideFlags: 0
@@ -1260,136 +1387,16 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36c165482b4f5c64bbba14f5f5e26491, type: 2}
   m_IsPrefabAsset: 0
---- !u!1001 &1821483986
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 164588959}
-    m_Modifications:
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -4.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 2.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.0000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.0000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043615076271506, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_Name
-      value: 'GasButton '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114123112712245238, guid: cd3906eea100676448a43f51c03e286b,
-        type: 2}
-      propertyPath: m_Text
-      value: 'Check For Gas Cylinder
-
-'
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &1821483987 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1043615076271506, guid: cd3906eea100676448a43f51c03e286b,
+  m_CorrespondingSourceObject: {fileID: 1734831451793304, guid: db470c68d388e4144bc99f3efc18bc79,
     type: 2}
-  m_PrefabInternal: {fileID: 1821483986}
---- !u!1001 &1857530334
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 164588959}
-    m_Modifications:
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -4.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.94
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.0000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.0000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043615076271506, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_Name
-      value: 'Tires Button '
-      objectReference: {fileID: 0}
-    - target: {fileID: 114123112712245238, guid: cd3906eea100676448a43f51c03e286b,
-        type: 2}
-      propertyPath: m_Text
-      value: "Check For Tires \n"
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-  m_IsPrefabAsset: 0
+  m_PrefabInternal: {fileID: 164588958}
 --- !u!1 &1857530335 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1043615076271506, guid: cd3906eea100676448a43f51c03e286b,
+  m_CorrespondingSourceObject: {fileID: 1702387763907288, guid: db470c68d388e4144bc99f3efc18bc79,
     type: 2}
-  m_PrefabInternal: {fileID: 1857530334}
+  m_PrefabInternal: {fileID: 164588958}
 --- !u!1 &1888721538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,65 +1463,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -6.5660005, y: -74.578, z: -11.023001}
---- !u!1001 &1909641318
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 164588959}
-    m_Modifications:
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -4.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.0000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 4002051514291336, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.0000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 1043615076271506, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-      propertyPath: m_Name
-      value: Hover Button (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114123112712245238, guid: cd3906eea100676448a43f51c03e286b,
-        type: 2}
-      propertyPath: m_Text
-      value: Check List
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cd3906eea100676448a43f51c03e286b, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1001 &2041416293
 Prefab:
   m_ObjectHideFlags: 0
