@@ -15,9 +15,26 @@ public class ControlForklift : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (inter.isHovering)
-        {
-
-        }
+       
 	}
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Hand")
+        {
+            var rb = other.gameObject.GetComponent<Rigidbody>();
+
+            rb.constraints = RigidbodyConstraints.None;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Hand")
+        {
+            var rb = other.gameObject.GetComponent<Rigidbody>();
+
+            rb.constraints = RigidbodyConstraints.FreezeRotationX;
+        }
+    }
 }
