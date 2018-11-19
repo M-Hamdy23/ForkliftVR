@@ -19,6 +19,7 @@ TagManager:
   - projectile
   - FxTemporaire
   - Load
+  - Hand
   layers:
   - Default
   - TransparentFX
