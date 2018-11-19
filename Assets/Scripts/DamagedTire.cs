@@ -8,8 +8,9 @@ public class DamagedTire : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+
+        FlatTire();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -18,6 +19,7 @@ public class DamagedTire : MonoBehaviour {
             //if trigger call bumpTire
         }
 	}
+
     public void BumpTire()
     {
         transform.localScale = new Vector3(1, 1, 1);
