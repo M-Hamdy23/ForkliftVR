@@ -79,8 +79,8 @@ public class ForkliftBasicMovment : MonoBehaviour
 
     public void Moving(float speed, Vector3 forwardAxis, Vector3 rotationAxis)
     {
-        rb.velocity = (speed * forwardAxis);
-        ///stransform.Rotate(speed * rotationAxis);
+       transform.Rotate(speed * rotationAxis);
+       rb.AddForce(speed * forwardAxis);
     }
 
 
