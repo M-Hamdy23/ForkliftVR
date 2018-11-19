@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 114201159982202256}
   - component: {fileID: 54378936935561678}
   - component: {fileID: 65660627699411214}
+  - component: {fileID: 114070910713228160}
   m_Layer: 0
   m_Name: Forklift
   m_TagString: Untagged
@@ -364,8 +365,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1923869207727308}
-  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -0.000197, y: 0.038401723, z: 0.00799737}
+  m_LocalRotation: {x: 0.22773534, y: 0.6694301, z: -0.6694301, w: -0.22773534}
+  m_LocalPosition: {x: -0.0002857685, y: 0.03858279, z: 0.00799737}
   m_LocalScale: {x: 0.0125, y: 0.00062500034, z: 0.012500007}
   m_Children:
   - {fileID: 4378500475401708}
@@ -375,7 +376,7 @@ Transform:
   - {fileID: 4250712176404980}
   m_Father: {fileID: 4168836236181040}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: -90}
+  m_LocalEulerAnglesHint: {x: 127.57599, y: 89.99999, z: -90}
 --- !u!4 &4168836236181040
 Transform:
   m_ObjectHideFlags: 1
@@ -383,7 +384,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1524522978455842}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.36, z: -21.92}
+  m_LocalPosition: {x: 22.948267, y: -4.2, z: -2.526052}
   m_LocalScale: {x: 40, y: 40, z: 40}
   m_Children:
   - {fileID: 4461823648734618}
@@ -1655,6 +1656,19 @@ MonoBehaviour:
   dbgPathLimit: 50
   debugText: {fileID: 0}
   outAngle: 0
+--- !u!114 &114070910713228160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1524522978455842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79a44110de9e2c4469ea38fdd06a35f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationAxis: {fileID: 11400000, guid: 1bc9a3aad7b03dc4bb504bd992b64dab, type: 2}
+  rotationWheel: {fileID: 1923869207727308}
 --- !u!114 &114168664933447936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1673,7 +1687,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1524522978455842}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7cb1e5c8d6a333941816bc14ddfcc624, type: 3}
   m_Name: 
